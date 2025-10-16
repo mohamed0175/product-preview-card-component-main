@@ -1,0 +1,43 @@
+:root {
+--Green-500: hsl(158, 36%, 37%);
+--Green-700: hsl(158, 42%, 18%);
+--Black: hsl(212, 21%, 14%);
+--Grey: hsl(228, 12%, 48%);
+--Cream: hsl(30, 38%, 92%);
+--White: hsl(0, 0%, 100%);
+font-family: "Fraunces"
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container {
+    background-color: var(--White);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.banner {
+    /* width:300px; */
+}
+
+p {
+    /* font-family: "Montserrat"; */
+}
