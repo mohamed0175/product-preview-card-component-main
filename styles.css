@@ -1,11 +1,11 @@
 :root {
---Green-500: hsl(158, 36%, 37%);
---Green-700: hsl(158, 42%, 18%);
---Black: hsl(212, 21%, 14%);
---Grey: hsl(228, 12%, 48%);
---Cream: hsl(30, 38%, 92%);
---White: hsl(0, 0%, 100%);
-font-family: "Fraunces"
+    --Green-500: hsl(158, 36%, 37%);
+    --Green-700: hsl(158, 42%, 18%);
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+    font-family: "Montserrat"
 }
 
 
@@ -28,16 +28,78 @@ body {
 
 .container {
     background-color: var(--White);
-    width: fit-content;
+    width: clamp(320px, 50%, 700px);
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    border-radius: 8px;
 }
 
 .banner {
-    /* width:300px; */
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+
 }
 
-p {
-    /* font-family: "Montserrat"; */
+.card-content {
+    padding: 30px;
+}
+
+.perfume {
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    color: var(--Grey);
+    font-size: 0.85rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    color: var(--Black);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: "Fraunces"
+}
+
+.content {
+    color: var(--Grey);
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--Green-500);
+    font-family: "Fraunces";
+    font-size: 1.8rem;
+    
+}
+
+h3 {
+    color: var(--Grey);
+    text-decoration: line-through;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+button {
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--Green-500);
+    color: var(--White);
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--Green-700);
+    cursor: pointer;
 }
