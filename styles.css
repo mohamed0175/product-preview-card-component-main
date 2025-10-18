@@ -28,13 +28,13 @@ body {
 
 .container {
     background-color: var(--White);
-    width: clamp(320px, 50%, 700px);
+    width: clamp(320px, 50%, 800px);
     display: flex;
     flex-direction: column;
     border-radius: 8px;
 }
 
-.banner {
+.banner img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 
@@ -102,4 +102,25 @@ button {
 button:hover {
     background-color: var(--Green-700);
     cursor: pointer;
+}
+
+@media(min-width: 701px){
+    :root {
+        font-size: 23px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .box {
+        flex: 1;
+    }
+
+    .banner img {
+        border-radius: 8px 0 0 8px;
+        height: 100%;
+        flex: 1;
+        min-width: 250px;
+    }
 }
