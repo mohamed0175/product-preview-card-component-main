@@ -28,7 +28,7 @@ body {
 
 .container {
     background-color: var(--White);
-    width: clamp(320px, 50%, 800px);
+    width: clamp(320px, 90%, 800px);
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -61,7 +61,7 @@ body {
 
 .content {
     color: var(--Grey);
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.5;
     font-weight: 500;
@@ -113,14 +113,29 @@ button:hover {
         flex-direction: row;
     }
 
-    .box {
+    .title {
+        font-size: 2.1rem;
+        line-height: 1;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 1;
+    }
+
+    .content {
+        font-size: 0.8rem;
+    }
+
+    .banner{
+        display: flex;
         flex: 1;
     }
 
     .banner img {
         border-radius: 8px 0 0 8px;
         height: 100%;
-        flex: 1;
-        min-width: 250px;
     }
 }
